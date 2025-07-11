@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 5px;
+            
+
+        }
+        .box{
+            border: 1px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                "side selector article"
+                                "footer footer footer";
+            grid-template-columns: 1fr 2fr 3fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 90vh;
+            background-color: rgba(0, 0, 0, 0.384);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px #999;
+            column-gap: 10px;
+            row-gap: 20px;
+            grid-template-columns: repeat(4, minmax(100px 1fr ));
+            
+
+        }
+        .box1{
+            grid-area: nav;
+            border: 1px solid black;
+            background-color: rgba(32, 178, 171, 0.432);
+            border-radius: 20px;
+        }
+        .box2{
+            grid-area: side;
+            border: 1px solid black;
+            background-color: rgba(250, 128, 114, 0.603);
+            border-radius: 20px;
+
+        }
+        .box3{
+            grid-area: article;
+            border: 1px solid black;
+            background-color: rgba(0, 255, 255, 0.521);
+            border-radius: 20px;
+        }
+        .box4{
+            grid-area: selector;
+            border: 1px solid black;
+            background-color: rgba(0, 0, 255, 0.514);
+            border-radius: 20px;
+        }
+        .box5{
+            grid-area: footer;
+            border: 1px solid black;
+            background-color: rgba(128, 255, 0, 0.253);
+            border-radius: 20px;
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+    </div>
+</body>
+</html>

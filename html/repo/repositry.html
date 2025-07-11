@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="repo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <em
+          style="
+            font-weight: 300;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+          "
+          >Harikrishna Kadepure</em
+        >
+      </h1>
+      <p style="font-family: 'Times New Roman', Times, serif">
+        harikrishnakadepure@gmail.com
+      </p>
+    </header>
+    <!-- <div><img src="hari samsang image.jpg" alt="" style="width: 200px; height: 250px; border-radius: 20px; align-items: center;"></div>
+    <div class="slideshow-text">
+      <h2 id="slideshow"></h2>
+    </div> -->
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+      "
+    >
+      <div class="slideshow-text">
+        <h2 id="slideshow"></h2>
+      </div>
+      <!-- <div>
+    <img src="ChatGPT Image Jun 27, 2025, 11_10_32 PM.png" alt="Harikrishna Image"
+      style="width: 200px; height: 200px; border-radius: 50px; object-fit: cover;" />
+  </div> -->
+    </div>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="card-container">
+        <div class="card"><h3>Learning DSA</h3></div>
+        <div class="card"><h3>Front-End Web Developer</h3></div>
+        <div class="card"><h3>Java & Python</h3></div>
+        <div class="card"><h3>AI Enthusiast</h3></div>
+      </div>
+    </section>
+
+    <section class="section" id="interests">
+      <h2>Interests</h2>
+      <div
+        class="card-container"
+        style="text-align: center; justify-content: center"
+      >
+        <div class="card"><h3>Real-world Problem Solving</h3></div>
+        <div class="card"><h3>Event Management & Hosting</h3></div>
+        <div class="card"><h3>Space Curiosity</h3></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <div class="card-container" style="text-align: center">
+        <div class="card"><h3>1–10th: Nooruddin Memorial High School</h3></div>
+        <div class="card"><h3>11–12th: Diamond PU Science College</h3></div>
+        <div class="card"><h3>BE (Pursuing): SKSJTI, Bangalore (CSE)</h3></div>
+      </div>
+    </section>
+
+    <script>
+      const messages = [
+        "I am Harikrishna","Aspiring Software Engineer",
+        "Future Innovator in Tech",
+        "Passionate About AI & Code",
+      ];
+
+      let messageIndex = 0;
+      let charIndex = 0;
+      const el = document.getElementById("slideshow");
+
+      function typeMessage() {
+        const currentText = messages[messageIndex];
+
+        if (charIndex <= currentText.length) {
+          el.innerText = currentText.substring(0, charIndex++);
+          setTimeout(typeMessage, 90); // typing speed
+        } else {
+          // pause then clear message and move to next
+          setTimeout(() => {
+            el.innerText = ""; // clear the text
+            charIndex = 0;
+            messageIndex = (messageIndex + 1) % messages.length;
+            setTimeout(typeMessage, 300); // small pause before next message
+          }, 1500); // wait before clearing
+        }
+      }
+
+      window.onload = typeMessage;
+    </script>
+
+    <div style="text-align: center; margin: 20px">
+      <p>Visit my pages</p>
+      <div style="display: inline-flex; gap: 50px">
+        <a
+          href="https://www.linkedin.com/in/harikrishna-vk-206b29298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          style="text-decoration: none; font-size: 18px; color: #0077b5"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a
+          href="https://www.instagram.com/harikrishnakadepure?igsh=OHRhZ203b3JsM2I4"
+          style="text-decoration: none; font-size: 18px; color: #e4405f"
+          target="_blank"
+          >Instagram</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
